@@ -1,0 +1,146 @@
+//
+// Typography
+// --------------------------------------------------
+
+.editorFullBreak{
+	clear: both;
+}
+
+// Emphasis & misc
+// -------------------------
+
+small
+{
+  font-size: 85%;
+}
+strong {
+	font-weight: normal;
+	font-family: $font-weight-bold;
+}
+em {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+}
+.editorUnderline {
+	text-decoration: underline;
+}
+.editorStrikethrough {
+	text-decoration: line-through;
+}
+
+// Headings
+// -------------------------
+
+h1,h2,h3,h4,h5 {
+	line-height: normal;
+	font-weight: normal;
+  font-family: $font-family-headings;
+}
+
+
+@for $i from 1 through length($headings) {
+	.rteCopy h#{$i},#{nth($headings,$i)} {
+		@include font-size(nth($headingSizes,$i));
+		color: #{nth($headingColors,$i)};
+		line-height: (nth($headingSizes,$i)/nth($headingLineHeights,$i));
+	}
+	
+	.rteCopy h#{$i} {
+		margin-bottom: em(nth($headingMargins,$i),nth($headingSizes,$i));
+	}
+	
+	#{nth($headings,$i)} {
+		margin-bottom: em(20 - nth($headingMargins,$i));
+	}
+}
+
+
+// Bullets
+// -------------------------
+
+.editorList,
+.editorRom,
+.editorBullets{
+  	margin: 0 0 em($font-lineheight-base / 2) em(20);
+  	list-style-type: disc;
+}
+
+.editorRom{
+	list-style-type: lower-roman;
+}
+
+ol.editorList{
+	list-style-type: decimal;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+// sub and sup
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+
+//Text alignment
+// -------------------------
+
+.centerJustify{
+	width: 100%; 
+	text-align: center;
+}
+.leftJustify{
+	width: 100%; 
+	text-align: left;
+}
+.rightJustify{
+	width: 100%;
+	text-align: right;
+}
+.justified{
+	width: 100%;
+	text-align: justify;
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+// Quotes
+// -------------------------
+
+.inlineQuote{
+	font-style: italic;
+}
+.inlineCite{
+	font-style: italic;
+	font-weight: bold;
+}
+.editorBlockQuote{
+	padding: 0 0 0 em(15);
+  	margin: 0 0 em($font-lineheight-base);
+	p {
+		margin-bottom: 0;
+	}
+	small {
+		display: block;
+		&:before {
+		  content: '\2014 \00A0';
+		}
+	}
+}

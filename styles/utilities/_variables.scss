@@ -1,0 +1,110 @@
+//
+// Variables
+// --------------------------------------------------
+
+// dimensions
+// -------------------------
+	
+	$d-pagewidth:					100%;
+	$d-innerwidth: 					1240 + 60;
+	$d-innerpadding: 				30;
+	$d-contentwidth: 				670;
+
+
+// Typography
+// -------------------------
+	
+    $font-weight-light:             300;
+    $font-weight-regular:           400;
+    $font-weight-semibold:          600;
+	$font-weight-bold: 				700;
+	
+	
+    $font-family-base:              'Arial';
+	$font-family-secondary: 		'sans-serif';
+    $font-family-headings:          'serif';
+	$font-size-base: 				18 !default;
+	$font-lineheight-base: 			28 !default;
+	$font-weight-base: 				$font-weight-light;
+
+
+// Colors
+// -----------------------------------------------------------------------
+
+	$color-1: 					#b01c2e; // RED 			[primary red]
+	$color-2: 					#43b02a; // GREEN 			[home panel green]
+	$color-3:					#64ccc9; // TURQ 			aqua [home page panel]
+	$color-4: 					#426bba; // BLUE 			medium blue [editorial inset(oapi)]
+	$color-5: 					#13294b; // BLUE 			dark blue [link panel(oapi)]
+	$color-6: 					#3a589b; // BLUE 			facebook blue
+	$color-7: 					#44aaee; // BLUE 			twitter blue
+	$color-8: 					#0077b5; // BLUE 			linkedin blue
+	$color-9:					#512d6d; // PURPLE 			[home page panel]
+	$color-10: 			 		#c4d600; // YELLOW 			[active nav items]
+	$color-11: 					#f1c400; // YELLOW 			[home page panel]
+	$color-12: 					#777e7e; // GRAY 			medium [hmpg footer bg]
+	$color-13: 			 		#717878; // GRAY 			medium+ [hmpg footer th bg]
+	$color-14: 			 		#a0a5a5; // GRAY 			light [hmpg footer table borders]
+	$color-15: 					#a51b2c; // RED 			hover state [footer table top]
+	$color-16: 					#cb333b; // RED 			Home panel red
+	$color-17: 					#fbfbfb; // GRAY 			Grid Panel BG Gray
+	$color-18: 					#f2f2f2; // GRAY 			Editorial layout BG colour
+	$color-19: 					#6586c6; // BLUE 			Download link
+	$color-20: 					#c6cbcc; // GRAY 			CTA title (lightest gray)
+	$color-21: 					#84bd00; // GREEN 			History Panel Overlay
+	$color-22: 					#5183c2; // BLUE 			Statistics Panel A
+	$color-23: 					#d5e9f2; // BLUE 			Vacancy BG
+	$color-24: 					#e1e4ed; // GRAY 			Anchor link BG
+	$color-25: 					#969696; // GRAY 			Image block caption
+	$color-26: 					#becf00; // GREEN 			Core business
+	$color-27: 					#9fa5a7; // GRAY 			Core business
+	$color-28: 					#cc8a00; // BROWN 			PR blog items
+	$color-29: 					#606666; // GRAY 			Global news link [news and media landing page]
+	$color-30: 					#daaa00; // YELLOW 			vGallery
+	$color-31: 					#64a70b; // GREEN 			Blog post [news and media]
+	$color-32: 					#a4bcc2; // TURQUOISE 		Our Values vPanel
+	
+// color roles
+// -------------------------
+	
+	$color-primary: 			$color-1;
+	$color-secondary: 			$color-4;
+	$color-tertiary: 			$color-5;
+	$color-facebook: 			$color-6;
+	$color-twitter: 			$color-7;
+	$color-linkedin: 			$color-8;
+	$color-body: 				#FFFFFF; 
+	$color-text: 				#000000;	
+	$color-link: 				$color-1 !default; // [red]
+	$color-link-hover: 			darken($color-link, 5%) !default; // [darkened]
+	$color-download: 			$color-19;
+	$color-vacancybg: 			$color-23;
+	
+	// states 
+	
+	$color-active: 				$color-10;
+	$color-hover: 				$color-15;
+	
+	// themes 
+	
+	$color-themes: 				$color-4,$color-21,$color-9,$color-1,$color-11,$color-3,$color-5,$color-12;
+	$color-news: 				$color-4;
+	$color-press: 				$color-28;
+	$color-blog: 				$color-31;
+	
+	// forms
+	
+	$color-input-border: 				#ccc;
+	$color-input-border-active: 		#000;
+
+
+// Headings
+// -------------------------
+
+	$headings: 							'.alpha','.beta','.gamma','.delta';
+	$headingSizes: 						51,48,21,16;
+	$headingFamilies: 					$font-family-headings;
+	$headingColors: 					$color-text , $color-text, $color-primary, $color-text;
+	$headingMargins: 					20,25,7,20;
+	$headingLineHeights: 				50,44,28,24;
+	$font-weight-heading:  				$font-weight-base;
